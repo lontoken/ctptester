@@ -1,13 +1,36 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>CTP Tester</title>
-  </head>
-  <body>
-    <section>
-        <input type="edit" name="ip" id="edt_ip" />
-        <input type="number" name="port" id="edt_port" min="1" max="999999" />
-    </section>
-  </body>
+<html lang="cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>CTP Tester</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="../node_modules/flat-ui/bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="../node_modules/flat-ui/css/flat-ui.css" rel="stylesheet">
+
+        <link rel="shortcut icon" href="images/favicon.ico">
+    </head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input type="text" value="" id="edt_ip" placeholder="IP地址" class="form-control" />
+                </div>          
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input type="number" value="" name="port" id="edt_ip" min="1" max="999999" placeholder="端口" class="form-control" />
+                </div>          
+            </div>
+        </div> <!-- /row -->
+
+        <div  class="row">
+            <div class="form-group"> 
+                <a href="#but_test" class="btn btn-block btn-lg btn-primary">测试</a>    
+            </div>
+            
+        </div>
+    </div>
+</body>
 </html>
